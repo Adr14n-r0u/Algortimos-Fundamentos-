@@ -1,11 +1,13 @@
-SubProceso mostrarMensajeSistemas //las funciones no pueden estar por dentro del algoritmo //Aquie definimos la funcion de mostrar mensajes
-		Definir mensaje Como Caracter //definimos mensaje como texto
-		mensaje = "iniciando sistema...abstraccion completada"; //agregamos el texto
-		Escribir mensaje //escribimos el mensaje
-FinSubProceso
-Algoritmo EJERCICIO_23//Iniciamos el algoritmo
-	Escribir "llamando la funcion por primera vez"
-	mostrarMensajeSistemas();//se llama a la funcion para que haga todo el Proceso 
-	Escribir "llamando la funcion por segunda vez"
-	mostrarMensajeSistemas();//se llama a la funcion para que haga todo el Proceso
+Algoritmo Ejemplo23
+	i <- 1
+	Dimensionar numeros(5)
+	Mientras i<=5 Hacer
+		Escribir 'Introduzca un elemento ', i, ' del vector numeros'
+		Leer numeros[i]
+		i <- i+1
+	FinMientras
+	Escribir 'Los numeros declarados en un arreglo son'
+	para i = 1 Hasta 5 Hacer
+		escribir numeros[i], " " 	
+	FinPara
 FinAlgoritmo
