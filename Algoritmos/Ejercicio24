@@ -1,12 +1,11 @@
-// Firma de la función: devuelve un valor (total)
-SubProceso total = calcularTotalVenta ( subtotal, iva )
-   Definir total Como Real;
-   total = subtotal + (subtotal * iva);
-   // Al terminar, PSeInt implícitamente hace el "return" de la variable 'total'
+SubProceso mostrarMensajeSistemas //las funciones no pueden estar por dentro del algoritmo //Aquie definimos la funcion de mostrar mensajes
+		Definir mensaje Como Caracter //definimos mensaje como texto
+		mensaje = "iniciando sistema...abstraccion completada"; //agregamos el texto
+		Escribir mensaje //escribimos el mensaje
 FinSubProceso
-Proceso ejemplo25
-   Definir pagoFinal Como Real;
-   // Ejecución de la función
-   pagoFinal <- calcularTotalVenta(100000, 0.19);
-   Escribir "El total a pagar con IVA es: $", pagoFinal;
-FinProceso
+Algoritmo EJERCICIO_23//Iniciamos el algoritmo
+	Escribir "llamando la funcion por primera vez"
+	mostrarMensajeSistemas();//se llama a la funcion para que haga todo el Proceso 
+	Escribir "llamando la funcion por segunda vez"
+	mostrarMensajeSistemas();//se llama a la funcion para que haga todo el Proceso
+FinAlgoritmo
