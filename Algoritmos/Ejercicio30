@@ -22,6 +22,6 @@ Algoritmo matriz
 	FinPara
 	promedio2 <- suma2 / 3
 	Escribir ""
-	Escribir "la suma de las notas del curso 1 es: ", suma2
+	Escribir "la suma de las notas del curso 2 es: ", suma2
 	Escribir "El promedio del curso 1 es: ", promedio2  //Ayuda de samuel niche 
 FinAlgoritmo
